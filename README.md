@@ -6,7 +6,7 @@ To change the way your bash works, simply modify the depend.rb file appropriatly
 1.) Using Bash
 Currently, the bash format is extremely simple. The basic format of every command is:
 
->>> foo bar | var1 var2
+>>>foo bar | var1 var2
 
 where foo bar would be the command, taking the parameters var1 and var2, Seperated by the pipeline.
 
@@ -15,8 +15,11 @@ where foo bar would be the command, taking the parameters var1 and var2, Seperat
 To change the way the bash looks, simply run the set user, set comp, and set prefix commands.
 
 >>> set user | ruby
+
 ruby>>> set comp | @rocks
+
 ruby@rocks>>> set prefix | :~$
+
 ruby@rocks:~$ 
 
 Or you can change the following lines in depend.rb,
