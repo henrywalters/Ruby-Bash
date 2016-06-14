@@ -25,7 +25,9 @@ ruby@rocks:~$
 Or you can change the following lines in depend.rb,
 
 $user = ""
+
 $comp = ""
+
 $prefix = ">>>"
 
 to whatever you please.
@@ -39,9 +41,13 @@ Define a function in the depend.rb file. The bash will pass either n amount of v
 Note that the variables, or elements in the array will all be strings.
 
 Now you must add the appropriate hash to the hash table in depend.rb called $cmds of the form:
+
 "bash command" => {:variables = integer, :exec = function_name}
+
 Note 1 : if you wish to pass an array, set variables to -1.
+
 Note 2: Your function name must look like "function_name(" without the end parathenesis.
+
 
 You're now ready to start using your own custom Command Line!
 
